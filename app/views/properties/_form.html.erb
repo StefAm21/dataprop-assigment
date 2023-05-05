@@ -7,6 +7,7 @@
   <%= f.input :area, label: "Area (m2)", required: true %>
   <%= f.input :rooms, label: "Nro. de Habitaciones", required: true %>
   <%= f.input :bathrooms, label: "Nro. de Baños", required: true %>
-  <%= f.input :photos, label: "Fotos", as: :file, required: true %>
+  <%# <%= f.input :photos, label: "Fotos", as: :file, required: true %>
+    <%= f.input :photos, as: :file, input_html: { multiple: true } %>
   <%= f.button :submit, class: "btn btn-flat", value:"Publicar propiedad" %>
 <% end %>

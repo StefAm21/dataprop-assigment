@@ -77,3 +77,9 @@ group :test do
 end
 
 gem 'rspec-rails', '~> 6.0', '>= 6.0.2'
+
+gem 'pagy', '~> 6.0', '>= 6.0.4'
+
+gem "dotenv-rails", groups: [:development, :test]
+
+gem "cloudinary"
