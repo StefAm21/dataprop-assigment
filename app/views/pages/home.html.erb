@@ -1,2 +1,74 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <h1>Pages#home</h1> %>
+<%# <p>Find me in app/views/pages/home.html.erb</p> %>
+<hr>
+
+<hr>
+<section id="opening">
+
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="col-2"></div>
+
+      <div class="col-8 firstTitle">
+        <h1>DATAPROP ASSIGMENT</h1>
+        <h3>Hecho por Stefano Amodei</h3>
+        <hr>
+        <%# <%= link_to "Ver Mis Propiedades", properties_path, class: "button-81" %>
+        <%= button_to "Ver Mis Propiedades", properties_path, class: "button-81", method: :get %>
+        <%# <%= link_to "Empezar ahora mismo", new_user_session_path, class: "btn btn-outline-light buttonHome" %>
+        <hr>
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+
+    <div class="row text-center" id="footHome">
+      <div class="col-4">
+        <h4>Encuentra tu proxima propiedad</h4>
+        <p>Aprovecha al máximo las posibilidades de nuestra plataforma</p>
+      </div>
+
+      <div class="col-4">
+        <h4>Arrienda o vende tu propiedad</h4>
+        <p>Una poderosa herramienta donde podrás gestionar de forma segura</p>
+      </div>
+
+      <div class="col-4">
+        <h4>Una plataforma para corredores</h4>
+        <p>Mejora la gestión de tu agencia inmobiliaria, digitaliza los procesos.</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<br>
+<hr>
+<hr>
+<br>
+<section id="aboutUs" class="p">
+  <div class="container pb-5 mb-5">
+
+    <div class="row text-start"><h3 id="serviceTitle">About Steff, fragment from CV:</h3></div>
+    <div class="row">
+      <div class="col-4">
+        <img src="https://www.sml.texas.gov/wp-content/uploads/2021/07/consumer-protection.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-8">
+
+        <h5 class="mb-3 mt-5 pt-5">
+          I studied management, business and entrepreneurship but after graduating from college wanted to add a plus to my studies and also enter the tech world. So, I decided to make a career shift and joined Le Wagon, a coding bootcamp where I started my journey as a Full-Stack Web Developer.
+        </h5>
+        <h5 class="mb-3">
+          As of my career interests, I am focused on getting my developer skills to the next level. Currently coding in RoR and Javascript, and open to broaden my knowledge in these and any other tools, languages and frameworks. Open to any full-time contract, freelance and remote opportunities.
+        </h5>
+        <h5>
+          For you to know me better, beyond my education and work-life, I want to share some of my hobbies:Gym and fitness lifestyle, nutrition and weightlifting; Mental Health, wellbeing, meditation and mindfullness; Sports, cycling; Entrepreneurship, start-ups, investments and personal growth.
+        </h5>
+      </div>
+    </div>
+
+  </div>
+</section>
