@@ -12,13 +12,14 @@
 <%# Falta agregar la foto %>
 <%# Mostramos las fotos de la propiedad %>
 <% @property.photos.each do |photo| %>
-  <%= image_tag photo %>
+  <%# <%= image_tag photo %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :fill %>
 <% end %>
 
 <div>
   <%= link_to "Editar Propiedad", edit_property_path(@property) %> |
   <%= link_to "Volver a Mis Propiedades", properties_path %>
-  
+
   <%= link_to "Eliminar esta propiedad", property_path(@property),
   data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
 </div>
