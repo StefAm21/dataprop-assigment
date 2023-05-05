@@ -1,0 +1,12 @@
+<%= simple_form_for @property do |f| %>
+  <%= f.input :title, label: "Titulo", required: true%>
+  <%= f.input :description, label: "Descripcion", required: true%>
+  <%= f.input :property_type, label: "Tipo", collection: @types.map { |type| [type.humanize, type] }, include_blank: "Selecciona una opción", required: true %>
+  <%= f.input :price, label: "Precio $", required: true %>
+  <%= f.input :comuna, label: "Comuna", required: true %>
+  <%= f.input :area, label: "Area (m2)", required: true %>
+  <%= f.input :rooms, label: "Nro. de Habitaciones", required: true %>
+  <%= f.input :bathrooms, label: "Nro. de Baños", required: true %>
+  <%= f.input :photos, label: "Fotos", as: :file, required: true %>
+  <%= f.button :submit, class: "btn btn-flat", value:"Publicar producto" %>
+<% end %>
