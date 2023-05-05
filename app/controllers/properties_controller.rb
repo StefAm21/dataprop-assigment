@@ -9,7 +9,6 @@ class PropertiesController < ApplicationController
 
   def new
     @property = Property.new
-    # @types = Property.types.keys
     @types = Property.property_types.keys
   end
 
@@ -23,6 +22,7 @@ class PropertiesController < ApplicationController
   end
 
   def edit
+    @types = Property.property_types.keys
   end
 
   def update
