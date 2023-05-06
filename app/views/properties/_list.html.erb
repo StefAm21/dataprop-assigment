@@ -1,9 +1,22 @@
 <div class="container">
-  <!-- Aqui comienzan las card de restauarnts-->
+  <div class="d-flex justify-content-around">
+    <p>Tipo</p>
+    <% Property.property_types.keys.each do |pt| %>
+      <%= link_to pt.capitalize, properties_path(property_type: pt), class: "btn btn-info", id:"show-#{pt}" %>
+    <% end %>
+    <br>
+    <p>Rooms/Baños</p>
+    <% [1,2,3,4,5,6,7,8].each do |pt| %>
+      <%= link_to pt, properties_path(quantity: pt), class: "btn btn-info", id:"show-#{pt}" %>
+    <% end %>
+  </div>
+
+
+  <!-- Aqui comienzan las cards-->
   <div class="row mt-5 mb-5">
     <% properties.each do |property| %>
       <%= render partial: 'property', locals: { property: property } %>
     <% end %>
   </div>
-  <!-- Aqui terminan las card de restauarnts-->
+  <!-- Aqui terminan las cards-->
 </div>

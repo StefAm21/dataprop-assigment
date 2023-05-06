@@ -1,10 +1,16 @@
 class PropertiesController < ApplicationController
+  include Pagy::Backend
   before_action :set_property, only: [:show, :edit, :update, :destroy]
   def index
-    @properties = Property.all.order(created_at: :desc)
+    @pagy, @properties = pagy(Property.all.order(created_at: :desc), items: 3)
+
 
     if params[:query].present?
-      @properties = @properties.where('title ILIKE ?', "%#{params[:query]}%")
+      @pagy, @properties = pagy(@properties.where('title ILIKE ?', "%#{params[:query]}%"), items: 3)
+    elsif params[:property_type].present?
+      @pagy, @properties = pagy(@properties.where(property_type: params[:property_type]), items: 3)
+    elsif params[:quantity].present?
+      @pagy, @properties = pagy(Property.where(rooms: params[:quantity]).or(Property.where(bathrooms: params[:quantity])), items: 3)
     end
   end
 
@@ -26,10 +32,14 @@ class PropertiesController < ApplicationController
   end
 
   def edit
+    redirect_to properties_path unless @property.user == current_user
+
     @types = Property.property_types.keys
   end
 
   def update
+    redirect_to properties_path unless @property.user == current_user
+
     if @property.update(property_params)
       redirect_to property_path(@property)
     else
@@ -38,7 +48,7 @@ class PropertiesController < ApplicationController
   end
 
   def destroy
-    @property.destroy
+    @property.destroy if @property.user == current_user
     redirect_to properties_path, status: :see_other
   end
 

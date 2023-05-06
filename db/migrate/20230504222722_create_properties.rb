@@ -9,7 +9,7 @@ class CreateProperties < ActiveRecord::Migration[7.0]
       t.integer :bathrooms
       t.string :title
       t.string :description
-      t.references :users, foreign_key: true, index: true
+      t.references :user, foreign_key: true, index: true
 
 
       t.timestamps

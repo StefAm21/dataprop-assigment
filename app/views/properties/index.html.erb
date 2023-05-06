@@ -14,3 +14,6 @@
   <%= render partial: "list", locals: { properties: @properties } %>
 <h4><%= button_to "Agregar Propiedad", new_property_path, class: "button-81 ml-1", method: :get %></h4>
 <br>
+<div class="container d-flex justify-content-center">
+  <%== pagy_bootstrap_nav(@pagy) %>
+</div>
