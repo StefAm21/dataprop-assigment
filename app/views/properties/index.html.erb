@@ -2,6 +2,7 @@
   <h1>Mis propiedades</h1>
 </div>
 <hr>
+<div class="container">
   <%= form_with url: properties_path, method: :get, html: { class: 'mb-4' } do |f| %>
     <%= f.text_field :query,
                       class: "form-control",
@@ -9,10 +10,9 @@
                       value: params[:query] %>
     <%= submit_tag "Buscar", class: "btn btn-primary" %>
   <% end %>
-
-
   <%= render partial: "list", locals: { properties: @properties } %>
-<h4><%= button_to "Agregar Propiedad", new_property_path, class: "button-81 ml-1", method: :get %></h4>
+  <h4><%= button_to "Agregar Propiedad", new_property_path, class: "button-81 ml-1", method: :get %></h4>
+</div>
 <br>
 <div class="container d-flex justify-content-center">
   <%== pagy_bootstrap_nav(@pagy) %>

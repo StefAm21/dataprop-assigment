@@ -11,12 +11,8 @@
           <p>
             <%= property.description.truncate(20) %>
           </p>
-          <div class="d-flex justify-content-around">
-            <%= link_to "Show", property_path(property), class: "btn btn-success", id:"show-#{property.id}" %>
-            <% if current_user == property.user %>
-              <%= link_to "Edit", edit_property_path(property), class: "btn btn-warning", id:"edit-#{property.id}" %>
-              <%= link_to "Destroy", property_path(property), method: :delete, data: { :turbo_confirm => "Estas seguro?" }, id:"destroy-#{property.id}", class: "btn btn-danger" %>
-            <% end %>
+          <div>
+            <%= link_to "Ver mas", property_path(property), class: "btn btn-success", id:"show-#{property.id}" %>
           </div>
         </div>
       </div>
