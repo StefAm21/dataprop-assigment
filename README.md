@@ -1,5 +1,6 @@
 Rails app: DATAPROP ASSIGNMENT generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by Stefano Amodei, utilizing [Le Wagon coding bootcamp](https://www.lewagon.com) team's components and resources in [Le Wagon UI KIT](https://uikit.lewagon.com/), and inspired by some [CODEPEN](https://codepen.io/your-work) CSS components and HTML.
 
+
 ### REQUIREMENTS:
 
 * Rails 7.0.4.3
@@ -23,6 +24,7 @@ Rails app: DATAPROP ASSIGNMENT generated with [lewagon/rails-templates](https://
 * bcrypt: version 3.1.18
 * bootstrap: version 5.1.1
 
+
 ### HOW TO LAUNCH LOCALLY:
 
 git clone git@github.com:StefAm21/dataprop-assigment.git
@@ -43,5 +45,23 @@ rails db:seeds
 
 dev
 
+
 ### ARQUITECTURE DATABASES:
 ![Captura de pantalla (298)](https://user-images.githubusercontent.com/80965786/236628651-b40d71ae-cf76-4252-8951-75e5a9ec2732.png)
+
+
+### TESTING
+This project includes a test written in RSpec. To run the test, make sure you have RSpec installed and run the following command:
+
+bundle exec rspec
+
+You can also run the test using the following command:
+
+bundle exec rspec path/to/spec/models/property_spec.rb
+
+### PRODUCTION
+
+The latest version of this application is available at [https://dataprop-assigment.herokuapp.com/](https://dataprop-assigment.herokuapp.com/). Please note that this is a live version in a production environment and may differ from the development version in some respects.
+
+Thank You!
+
