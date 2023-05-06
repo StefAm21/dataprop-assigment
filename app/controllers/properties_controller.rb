@@ -2,6 +2,10 @@ class PropertiesController < ApplicationController
   before_action :set_property, only: [:show, :edit, :update, :destroy]
   def index
     @properties = Property.all.order(created_at: :desc)
+
+    if params[:query].present?
+      @properties = @properties.where('title ILIKE ?', "%#{params[:query]}%")
+    end
   end
 
   def show

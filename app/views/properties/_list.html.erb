@@ -1,0 +1,9 @@
+<div class="container">
+  <!-- Aqui comienzan las card de restauarnts-->
+  <div class="row mt-5 mb-5">
+    <% properties.each do |property| %>
+      <%= render partial: 'property', locals: { property: property } %>
+    <% end %>
+  </div>
+  <!-- Aqui terminan las card de restauarnts-->
+</div>
