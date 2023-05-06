@@ -19,10 +19,11 @@ Rails app: DATAPROP ASSIGNMENT generated with [lewagon/rails-templates](https://
 * activesupport: version 7.0.4.3
 * autoprefixer-rails: version 10.4.13.0
 * capybara: version 3.39.0
-* cloudinary: version 1.25.0
 * bootsnap: version 1.16.0
 * bcrypt: version 3.1.18
 * bootstrap: version 5.1.1
+* cloudinary: version 1.25.0
+* pagy: version 6.0.4
 
 
 ### HOW TO LAUNCH LOCALLY:
@@ -57,7 +58,7 @@ bundle exec rspec
 
 You can also run the test using the following command:
 
-bundle exec rspec path/to/spec/models/property_spec.rb
+bundle exec rspec spec/models/property_spec.rb
 
 ### PRODUCTION
 
