@@ -39,6 +39,8 @@ rails db:create
 
 rails db:migrate
 
+rails db:seeds
+
 dev
 
 ### ARQUITECTURE DATABASES:
