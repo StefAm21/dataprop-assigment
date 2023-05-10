@@ -1,68 +1,70 @@
-Rails app: DATAPROP ASSIGNMENT generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by Stefano Amodei, utilizing [Le Wagon coding bootcamp](https://www.lewagon.com) team's components and resources in [Le Wagon UI KIT](https://uikit.lewagon.com/), and inspired by some [CODEPEN](https://codepen.io/your-work) CSS components and HTML.
+# DATAPROP ASSIGNMENT
+The following project has been generated with [Le Wagon's template](https://github.com/lewagon/rails-templates), created entirely by [Stefano Amodei](https://www.linkedin.com/in/stefano-amodei/), using [Le Wagon coding bootcamp](https://www.lewagon.com) components and resources: [Le Wagon UI KIT](https://uikit.lewagon.com/).
 
+Special consideration take to be inspired by some [CodePen](https://codepen.io/your-work) CSS components and HTML.
 
 ### REQUIREMENTS:
 
-* Rails 7.0.4.3
-* font-awesome-sass: version 6.1
-* simple_form: version 5.2.0
-* actioncable: version 7.0.4.3
-* actionmailbox: version 7.0.4.3
-* actionmailer: version 7.0.4.3
-* actionpack: version 7.0.4.3
-* actiontext: version 7.0.4.3
-* actionview: version 7.0.4.3
-* activejob: version 7.0.4.3
-* activemodel: version 7.0.4.3
-* activerecord: version 7.0.4.3
-* activestorage: version 7.0.4.3
-* activesupport: version 7.0.4.3
-* autoprefixer-rails: version 10.4.13.0
-* capybara: version 3.39.0
-* bootsnap: version 1.16.0
-* bcrypt: version 3.1.18
-* bootstrap: version 5.1.1
-* cloudinary: version 1.25.0
-* pagy: version 6.0.4
+- rails -v 7.0.4.3
+- ruby -v 3.1.2
+- font awesome -v 6.1
+- cloudinary -v 1.25.0
+- pagy -v 6.0.4
+- rspec -v 
 
 
-### HOW TO LAUNCH LOCALLY:
+### HOW TO EXECUTE IN DEVELOPMENT:
+In order to run locally, follow this steps in your terminal:
 
-git clone git@github.com:StefAm21/dataprop-assigment.git
+1. Clone the repository to your computer
+  - Using SSH: `git clone git@github.com:StefAm21/dataprop-assigment.git`
+  - Using GitHub CLI: `gh repo clone StefAm21/dataprop-assigment`
 
-gh repo clone StefAm21/dataprop-assigment
+2. Jump into the project folder: `cd dataprop-assigment`
 
-cd dataprop-assigment
+3. Run the setup configuration:
+  - Install all gems: `bundle install`
+  - Add JS packages to project: `yarn`
+  - Create local database: `rails db:create`
+  - Migrate (create database structure): `rails db:migrate`
+  - Add fake data as playground: `rails db:seeds`
+  - Spin your server: `rails s`
+  - Open a second terminal and run JS: `yarn build --watch`
 
-bundle install
-
-yarn
-
-rails db:create
-
-rails db:migrate
-
-rails db:seeds
-
-dev
+You can also run the server with only `dev`, but you need to XXXX... 
 
 
-### ARQUITECTURE DATABASES:
-![Captura de pantalla (298)](https://user-images.githubusercontent.com/80965786/236628651-b40d71ae-cf76-4252-8951-75e5a9ec2732.png)
+### ARCHITECTURE DATABASES:
+![Database](https://github.com/StefAm21/dataprop-assigment/assets/80965786/aaf8d9ef-a379-4bb1-871a-028bac1ff989)
 
+Reasoning behind this Model architecture:
+- User: ?
+  - email
+  - password
+- Property: ?
+  - xxxx
 
 ### TESTING
-This project includes a test written in RSpec. To run the test, make sure you have RSpec installed and run the following command:
+This project includes a test written in [RSpec](https://github.com/rspec/rspec-rails). Please, make sure you have **RSpec** installed and run the following command: `bundle exec rspec`.
 
-bundle exec rspec
+You can run the tests with: `bundle exec rspec spec/models/property_spec.rb`
 
-You can also run the test using the following command:
+⚠️Test coverage is 10%.
+ℹ️ Due to time shoratge, I've decided only to have an integration test the process of a User to create a Property.
+❓ Coverage includes User and Property models, but no controllers or views. Also, there are no integration tests.
 
-bundle exec rspec spec/models/property_spec.rb
+### STAGING
+
+This project has no staging enviroment at the moment.
+ℹ️ You can request enviroment variables at stephano@gmail.com
+
 
 ### PRODUCTION
 
-The latest version of this application is available at [https://dataprop-assigment.herokuapp.com/](https://dataprop-assigment.herokuapp.com/). Please note that this is a live version in a production environment and may differ from the development version in some respects.
+The latest version of this application is available at [https://dataprop-assigment.herokuapp.com/](https://dataprop-assigment.herokuapp.com/). **Please note that this is a live version in a production environment.**
 
-Thank You!
+ℹ️ You can request enviroment variables at stephano@gmail.com
 
+
+### Bug Report
+If you would like to contribute to this project, email me, or create an issue.
