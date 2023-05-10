@@ -3,7 +3,8 @@ The following project has been generated with [Le Wagon's template](https://gith
 
 Special consideration take to be inspired by some [CodePen](https://codepen.io/your-work) CSS components and HTML.
 
-### REQUIREMENTS:
+### REQUIREMENTS
+---
 
 - rails -v 7.0.4.3
 - ruby -v 3.1.2
@@ -13,7 +14,8 @@ Special consideration take to be inspired by some [CodePen](https://codepen.io/y
 - rspec -v 
 
 
-### HOW TO EXECUTE IN DEVELOPMENT:
+### How to execute in DEVELOPMENT
+---
 In order to run locally, follow this steps in your terminal:
 
 1. Clone the repository to your computer
@@ -34,7 +36,7 @@ In order to run locally, follow this steps in your terminal:
 You can also run the server with only `dev`, but you need to XXXX... 
 
 
-### ARCHITECTURE DATABASES:
+#### Architecture Database:
 ![Database](https://github.com/StefAm21/dataprop-assigment/assets/80965786/aaf8d9ef-a379-4bb1-871a-028bac1ff989)
 
 Reasoning behind this Model architecture:
@@ -45,26 +47,29 @@ Reasoning behind this Model architecture:
   - xxxx
 
 ### TESTING
+---
 This project includes a test written in [RSpec](https://github.com/rspec/rspec-rails). Please, make sure you have **RSpec** installed and run the following command: `bundle exec rspec`.
 
 You can run the tests with: `bundle exec rspec spec/models/property_spec.rb`
 
-⚠️Test coverage is 10%.
-ℹ️ Due to time shoratge, I've decided only to have an integration test the process of a User to create a Property.
-❓ Coverage includes User and Property models, but no controllers or views. Also, there are no integration tests.
+**Special remarks:**
+- ⚠️Test coverage is 10%.
+- ℹ️ Due to time shoratge, I've decided only to have an integration test the process of a User to create a Property.
+- ❓Coverage includes User and Property models, but no controllers or views. Also, there are no integration tests.
 
 ### STAGING
-
+---
 This project has no staging enviroment at the moment.
 ℹ️ You can request enviroment variables at stephano@gmail.com
 
 
 ### PRODUCTION
-
+---
 The latest version of this application is available at [https://dataprop-assigment.herokuapp.com/](https://dataprop-assigment.herokuapp.com/). **Please note that this is a live version in a production environment.**
 
 ℹ️ You can request enviroment variables at stephano@gmail.com
 
 
 ### Bug Report
+---
 If you would like to contribute to this project, email me, or create an issue.
