@@ -1,3 +1,30 @@
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+HERE IS THE TEMPLATE OF ANOTHER PROJECT AS A GUIDE:
 # DATAPROP ASSIGNMENT
 The following project has been generated with [Le Wagon's template](https://github.com/lewagon/rails-templates), created entirely by [Stefano Amodei](https://www.linkedin.com/in/stefano-amodei/), using [Le Wagon coding bootcamp](https://www.lewagon.com) components and resources: [Le Wagon UI KIT](https://uikit.lewagon.com/).
 
